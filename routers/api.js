@@ -5,7 +5,7 @@ var{mongoose} =require('../db/connection2')
 var{author} =require('../models/user')
 
 router.get('/check',(req,res)=>{
-res.send('hi');
+res.status(200).send('hi my app is running');
 })
 
 router.post('/save',async(req,res)=>{
